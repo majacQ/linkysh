@@ -24,7 +24,6 @@ Linkysh is a free & open-source URL shortener. It's main goals are mainly:
 
 > While this table is included, it is not necessary relevant as Linkysh is still alpha.
 
-
 This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudNativeJS/ModuleLTS) policy, with the following End Of Life (EOL) dates:
 
 | Module Version   | Release Date | Minimum EOL | EOL With     | Status  |

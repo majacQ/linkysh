@@ -12,11 +12,13 @@
 
 Linkysh is a free & open-source URL shortener. It's main goals are mainly:
 
-* Auditable and traceable user actions
-* Extensibility through [extension points](https://wiki.eclipse.org/FAQ_What_are_extensions_and_extension_points%3F)
-* Fully-featured user account and access (UAA) management
-
-    e.g. Support integration with existing LDAP, SAML, OAuth, OpenID Connect implementations
+<li>Extensibility through extension points</li>
+<li>Easy on-prem deployment</li>
+<li>Fine-grained <abbr title="user account and access">UAA</abbr> control</li>
+<li>Freely-licensed with MIT</li>
+<li>User action auditability</li>
+<li>Broad <abbr title="single sign-on">SSO</abbr> support</li>
+<li>Short-link analytics</li>
 
 ## Module Long Term Support Policy
 

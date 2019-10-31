@@ -12,13 +12,13 @@
 
 Linkysh is a free & open-source URL shortener. It's main goals are mainly:
 
-<li>Extensibility through extension points</li>
-<li>Easy on-prem deployment</li>
-<li>Fine-grained <abbr title="user account and access">UAA</abbr> control</li>
-<li>Freely-licensed with MIT</li>
-<li>User action auditability</li>
-<li>Broad <abbr title="single sign-on">SSO</abbr> support</li>
-<li>Short-link analytics</li>
+* Extensibility through extension points
+* Easy on-prem deployment
+* Fine-grained UAA control
+* Freely-licensed with MIT
+* User action auditability
+* Broad SSO support
+* Short-link analytics
 
 ## Module Long Term Support Policy
 

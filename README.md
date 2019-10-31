@@ -1,4 +1,4 @@
-# linkysh
+# Linkysh
 
 > **This software is under heavy development. Expect many backwards-incompatible changes.**
 

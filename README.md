@@ -4,7 +4,7 @@
 
 ![Powered by Loopback 4](https://loopback.io/images/branding/powered-by-loopback/blue/powered-by-loopback-sm.png)
 
-![GitHub](https://img.shields.io/github/license/linkysh/core)
+![GitHub](https://img.shields.io/github/license/linkysh/linkysh)
 [![Module LTS Adopted'](https://img.shields.io/badge/Module%20LTS-Adopted-brightgreen.svg?style=flat)](http://github.com/CloudNativeJS/ModuleLTS)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/package",
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "cm": "git-cz -s"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.9",
+    "lerna": "^3.18.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

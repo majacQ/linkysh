@@ -15,7 +15,7 @@ Linkysh is a free & open-source URL shortener. It's main goals are mainly:
 * Extensibility through extension points
 * Easy on-prem deployment
 * Fine-grained UAA control
-* Freely-licensed with MIT
+* Freely-licensed with Apache 2.0
 * User action auditability
 * Broad SSO support
 * Short-link analytics

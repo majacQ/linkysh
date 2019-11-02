@@ -9,11 +9,14 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg?style=flat-square)](code-of-conduct.md)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/linkysh/linkysh.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/linkysh/linkysh/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/linkysh/linkysh.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/linkysh/linkysh/context:javascript)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3369/badge)](https://bestpractices.coreinfrastructure.org/projects/3369)
 
 | Package        | Vulnerabilities |
 |----------------|-----------------|
-| admin-frontend | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/admin-frontend/package.json) |
-| core           | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/core/package.json) |
+| admin-frontend | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json&style=flat-square)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/admin-frontend/package.json) |
+| core           | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json&style=flat-square)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/core/package.json) |
 
 Linkysh is a free & open-source URL shortener. It's main goals are mainly:
 

@@ -7,7 +7,7 @@ import {
     UAA_CLIENT_ID,
     UAA_CLIENT_SECRET,
     UAA_REDIRECT_URLS,
-    UAA_SERVER_URL
+    UAA_SERVER_URL,
 } from './env';
 
 const verify = async () => {
@@ -19,11 +19,11 @@ export const uaaAuthStrategy = async () => {
     const UAA_CLIENT = new UAA_ISSUER.Client({
         client_id: UAA_CLIENT_ID,
         client_secret: UAA_CLIENT_SECRET,
-        redirect_uris: UAA_REDIRECT_URLS
+        redirect_uris: UAA_REDIRECT_URLS,
     });
     return new StrategyAdapter(
         new Strategy({
-            client: UAA_CLIENT
+            client: UAA_CLIENT,
         }, verify), 'DD'
     )
 }

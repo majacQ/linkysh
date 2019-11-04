@@ -3,6 +3,7 @@
 > **This software is under heavy development. Expect many backwards-incompatible changes.**
 
 ![Powered by Loopback 4](https://loopback.io/images/branding/powered-by-loopback/blue/powered-by-loopback-sm.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh?ref=badge_shield)
 
 ![GitHub](https://img.shields.io/github/license/linkysh/linkysh?style=flat-square)
 [![Module LTS Adopted'](https://img.shields.io/badge/Module%20LTS-Adopted-brightgreen.svg?style=flat-square)](http://github.com/CloudNativeJS/ModuleLTS)
@@ -41,3 +42,7 @@ This module adopts the [Module Long Term Support (LTS)](http://github.com/CloudN
 ## Contributors
 
 * [Rifa Achrinza](https://github.com/achrinza) (Main contributor)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh?ref=badge_large)

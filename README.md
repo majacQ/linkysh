@@ -3,7 +3,6 @@
 > **This software is under heavy development. Expect many backwards-incompatible changes.**
 
 ![Powered by Loopback 4](https://loopback.io/images/branding/powered-by-loopback/blue/powered-by-loopback-sm.png)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh?ref=badge_shield)
 
 ![GitHub](https://img.shields.io/github/license/linkysh/linkysh?style=flat-square)
 [![Module LTS Adopted'](https://img.shields.io/badge/Module%20LTS-Adopted-brightgreen.svg?style=flat-square)](http://github.com/CloudNativeJS/ModuleLTS)
@@ -12,6 +11,7 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/linkysh/linkysh.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/linkysh/linkysh/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/linkysh/linkysh.svg?logo=lgtm&logoWidth=18&style=flat-square)](https://lgtm.com/projects/g/linkysh/linkysh/context:javascript)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh?ref=badge_shield)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3369/badge)](https://bestpractices.coreinfrastructure.org/projects/3369)
 
 | Package        | Vulnerabilities |

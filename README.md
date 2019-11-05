@@ -1,6 +1,6 @@
 # Linkysh
 
-> **This software is under heavy development. Expect many backwards-incompatible changes.**
+> **This software is under heavy development. Expect many breaking changes.**
 
 ![Powered by Loopback 4](https://loopback.io/images/branding/powered-by-loopback/blue/powered-by-loopback-sm.png)
 

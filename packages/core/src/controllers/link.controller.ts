@@ -16,7 +16,7 @@
 // SPDX-Short-Identifier: Apache-2.0
 //
 
-import { inject } from '@loopback/core';
+import {inject} from '@loopback/core';
 import {
   Count,
   CountSchema,
@@ -36,10 +36,10 @@ import {
   del,
   requestBody,
   Response, // For custom response when retrieving shortAlias
-  RestBindings
+  RestBindings,
 } from '@loopback/rest';
-import { Link } from '../models';
-import { LinkRepository } from '../repositories';
+import {Link} from '../models';
+import {LinkRepository} from '../repositories';
 
 export class LinkController {
   constructor(
@@ -48,30 +48,37 @@ export class LinkController {
 
     // Inject for custom shortAlias retrieval below
     @inject(RestBindings.Http.RESPONSE)
-    protected response: Response
-  ) { }
+    protected response: Response,
+  ) {}
 
   @get('/{shortAlias}', {
     responses: {
       '301': {
-        description: 'Shortlink redirect'
-      }
-    }
+        description: 'Shortlink redirect',
+      },
+    },
   })
-  async redirect(@param.path.string('shortAlias') shortAlias: string): Promise<any> {
-    this.response.status(301);
-    this.linkRepository.findOne({
+  async redirect(
+    @param.path.string('shortAlias') shortAlias: string,
+  ): Promise<Response | undefined> {
+    const link = await this.linkRepository.findOne({
       where: {
-        ShortAlias: shortAlias
-      }
+        ShortAlias: shortAlias,
+      },
     });
+
+    if (link == null) {
+      return this.response.status(404).send();
+    }
+
+    this.response.redirect(link.RedirectURL);
   }
 
   @post('/links', {
     responses: {
       '200': {
         description: 'Link model instance',
-        content: { 'application/json': { schema: getModelSchemaRef(Link) } },
+        content: {'application/json': {schema: getModelSchemaRef(Link)}},
       },
     },
   })
@@ -95,7 +102,7 @@ export class LinkController {
     responses: {
       '200': {
         description: 'Link model count',
-        content: { 'application/json': { schema: CountSchema } },
+        content: {'application/json': {schema: CountSchema}},
       },
     },
   })
@@ -111,14 +118,15 @@ export class LinkController {
         description: 'Array of Link model instances',
         content: {
           'application/json': {
-            schema: { type: 'array', items: getModelSchemaRef(Link) },
+            schema: {type: 'array', items: getModelSchemaRef(Link)},
           },
         },
       },
     },
   })
   async find(
-    @param.query.object('filter', getFilterSchemaFor(Link)) filter?: Filter<Link>,
+    @param.query.object('filter', getFilterSchemaFor(Link))
+    filter?: Filter<Link>,
   ): Promise<Link[]> {
     return this.linkRepository.find(filter);
   }
@@ -127,7 +135,7 @@ export class LinkController {
     responses: {
       '200': {
         description: 'Link PATCH success count',
-        content: { 'application/json': { schema: CountSchema } },
+        content: {'application/json': {schema: CountSchema}},
       },
     },
   })
@@ -135,7 +143,7 @@ export class LinkController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Link, { partial: true }),
+          schema: getModelSchemaRef(Link, {partial: true}),
         },
       },
     })
@@ -149,7 +157,7 @@ export class LinkController {
     responses: {
       '200': {
         description: 'Link model instance',
-        content: { 'application/json': { schema: getModelSchemaRef(Link) } },
+        content: {'application/json': {schema: getModelSchemaRef(Link)}},
       },
     },
   })
@@ -169,7 +177,7 @@ export class LinkController {
     @requestBody({
       content: {
         'application/json': {
-          schema: getModelSchemaRef(Link, { partial: true }),
+          schema: getModelSchemaRef(Link, {partial: true}),
         },
       },
     })

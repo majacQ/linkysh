@@ -16,42 +16,26 @@
 // SPDX-Short-Identifier: Apache-2.0
 //
 
-import {Entity, model, property} from '@loopback/repository';
+import {Link} from '../../models';
+import {LinkRepository} from '../../repositories';
+import {TestDbDataSource} from '../fixtures/datasources/testdb.datasource';
 
-@model()
-export class Link extends Entity {
-  @property({
-    type: 'number',
-    id: true,
-    generated: true,
-  })
-  LinkID?: number;
-
-  @property({
-    type: 'string',
-    required: true,
-    jsonSchema: {
-      maxLength: 1024,
-    },
-  })
-  RedirectURL: string;
-
-  @property({
-    type: 'string',
-    required: true,
-    jsonSchema: {
-      maxLength: 255,
-    },
-  })
-  ShortAlias: string;
-
-  constructor(data?: Partial<Link>) {
-    super(data);
-  }
+export async function givenEmptyDatabase() {
+  await new LinkRepository(new TestDbDataSource()).deleteAll();
 }
 
-export interface LinkRelations {
-  // describe navigational properties here
+export function givenLinkData(link?: Partial<Link>) {
+  const data = Object.assign(
+    {
+      RedirectURL: 'a-redirect-url',
+      ShortAlias: 'a-short-alias',
+    },
+    link,
+  );
+
+  return new Link(data);
 }
 
-export type LinkWithRelations = Link & LinkRelations;
+export async function givenLink(data?: Partial<Link>) {
+  return new LinkRepository(new TestDbDataSource()).create(givenLinkData(data));
+}

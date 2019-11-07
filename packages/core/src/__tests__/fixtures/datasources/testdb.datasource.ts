@@ -16,24 +16,34 @@
 // SPDX-Short-Identifier: Apache-2.0
 //
 
-// import {Client, expect} from '@loopback/testlab';
-// import {LinkyshCoreApplication} from '../..';
-// import {setupApplication} from './test-helper';
+import {
+  inject,
+  lifeCycleObserver,
+  LifeCycleObserver,
+  ValueOrPromise,
+} from '@loopback/core';
+import {juggler} from '@loopback/repository';
 
-// describe('PingController', () => {
-//   let app: LinkyshCoreApplication;
-//   let client: Client;
+const config = {
+  name: 'db',
+  connector: 'memory',
+};
 
-//   before('setupApplication', async () => {
-//     ({app, client} = await setupApplication());
-//   });
+@lifeCycleObserver('datasource')
+export class TestDbDataSource extends juggler.DataSource
+  implements LifeCycleObserver {
+  static dataSourceName = 'testdb';
 
-//   after(async () => {
-//     await app.stop();
-//   });
+  constructor(
+    @inject('datasources.config.db', {optional: true})
+    dsConfig: object = config,
+  ) {
+    super(dsConfig);
+  }
 
-//   it('invokes GET /ping', async () => {
-//     const res = await client.get('/ping?msg=world').expect(200);
-//     expect(res.body).to.containEql({greeting: 'Hello from Linkysh'});
-//   });
-// });
+  start(): ValueOrPromise<void> {}
+
+  stop(): ValueOrPromise<void> {
+    return super.disconnect();
+  }
+}

@@ -16,17 +16,34 @@
 // SPDX-Short-Identifier: Apache-2.0
 //
 
-import {DefaultCrudRepository} from '@loopback/repository';
-import {Link, LinkRelations} from '../models';
-import {DbDataSource} from '../datasources';
-import {inject} from '@loopback/core';
+import {
+  inject,
+  lifeCycleObserver,
+  LifeCycleObserver,
+  ValueOrPromise,
+} from '@loopback/core';
+import {juggler} from '@loopback/repository';
 
-export class LinkRepository extends DefaultCrudRepository<
-  Link,
-  typeof Link.prototype.LinkID,
-  LinkRelations
-> {
-  constructor(@inject('datasources.db') dataSource: DbDataSource) {
-    super(Link, dataSource);
+const config = {
+  name: 'db',
+  connector: 'memory',
+};
+
+@lifeCycleObserver('datasource')
+export class TestDbDataSource extends juggler.DataSource
+  implements LifeCycleObserver {
+  static dataSourceName = 'testdb';
+
+  constructor(
+    @inject('datasources.config.db', {optional: true})
+    dsConfig: object = config,
+  ) {
+    super(dsConfig);
+  }
+
+  start(): ValueOrPromise<void> {}
+
+  stop(): ValueOrPromise<void> {
+    return super.disconnect();
   }
 }

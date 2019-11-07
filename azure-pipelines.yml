@@ -17,12 +17,12 @@ steps:
 
 - script: |
     npm install -g @angular/cli
-    npm ci
-    npx lerna bootstrap
+    npm i -g lerna
+    lerna bootstrap
   displayName: 'install dependencies'
 
 - script: |
-    npx lerna run build
+    lerna run build
   displayName: 'run build process'
 
 - script: |

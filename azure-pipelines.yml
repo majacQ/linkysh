@@ -26,5 +26,5 @@ steps:
   displayName: 'Run Build Processes'
 
 - script: |
-    npx lerna exec -- npm run test
+    npx lerna run test
   displayName: 'Run Tests'

@@ -14,10 +14,10 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flinkysh%2Flinkysh?ref=badge_shield)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3369/badge)](https://bestpractices.coreinfrastructure.org/projects/3369)
 
-| Package        | Vulnerabilities |
-|----------------|-----------------|
-| admin-frontend | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json&style=flat-square)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/admin-frontend/package.json) |
-| core           | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json&style=flat-square)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/core/package.json) |
+| Package        | Vulnerabilities | Dependencies |
+|----------------|-----------------|--------------|
+| admin-frontend | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json&style=flat-square)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/admin-frontend/package.json) | [![dependencies Status](https://david-dm.org/linkysh/linkysh/status.svg?path=packages/core)](https://david-dm.org/linkysh/linkysh?path=packages/core) |
+| core           | [![Known Vulnerabilities](https://snyk.io/test/github/linkysh/linkysh/badge.svg?targetFile=packages/admin-frontend/package.json&style=flat-square)](https://snyk.io/test/github/linkysh/linkysh?targetFile=packages/core/package.json) | [![dependencies Status](https://david-dm.org/linkysh/linkysh/status.svg?path=packages/admin-frontend)](https://david-dm.org/linkysh/linkysh?path=packages/admin-frontend) |
 
 Linkysh is a free & open-source URL shortener. It's main goals are mainly:
 

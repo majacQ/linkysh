@@ -61,7 +61,7 @@
     "loopback-connector-postgresql": "^3.8.0"
   },
   "devDependencies": {
-    "@loopback/build": "2.0.14",
+    "@loopback/build": "2.0.15",
     "source-map-support": "0.5.13",
     "@loopback/testlab": "1.9.2",
     "@types/node": "10.14.22",

@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@loopback/build": "2.0.15",
-    "source-map-support": "0.5.13",
+    "source-map-support": "0.5.16",
     "@loopback/testlab": "1.9.3",
     "@types/node": "10.17.4",
     "@typescript-eslint/parser": "2.4.0",

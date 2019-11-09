@@ -28,10 +28,10 @@ import * as config from './db.datasource.json';
 @lifeCycleObserver('datasource')
 export class DbDataSource extends juggler.DataSource
   implements LifeCycleObserver {
-  static dataSourceName = 'DB';
+  static dataSourceName = 'db';
 
   constructor(
-    @inject('datasources.config.DB', {optional: true})
+    @inject('datasources.config.db', {optional: true})
     dsConfig: object = config,
   ) {
     super(dsConfig);

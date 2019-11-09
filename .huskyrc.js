@@ -1,6 +1,7 @@
 module.exports = {
-    hooks: {
-        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-        "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      }
-}
+  hooks: {
+    "pre-commit": "pretty-quick --staged",
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+  }
+};

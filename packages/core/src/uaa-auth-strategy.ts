@@ -1,4 +1,4 @@
-import { StrategyAdapter } from '@loopback/authentication-passport'
+import { StrategyAdapter } from '@loopback/authentication-passport';
 import {
     Issuer,
     Strategy,

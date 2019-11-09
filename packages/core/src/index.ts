@@ -16,8 +16,13 @@
 // SPDX-Short-Identifier: Apache-2.0
 //
 
-import {LinkyshCoreApplication} from './application';
-import {ApplicationConfig} from '@loopback/core';
+import { LinkyshCoreApplication } from './application';
+import { AuthenticationBindings } from '@loopback/authentication';
+import {
+  ApplicationConfig,
+  CoreTags,
+} from '@loopback/core';
+import { uaaAuthStrategy } from './uaa-auth-strategy';
 
 export {LinkyshCoreApplication};
 
@@ -25,6 +30,20 @@ export async function main(options: ApplicationConfig = {}) {
   const app = new LinkyshCoreApplication(options);
   await app.boot();
   await app.start();
+
+  // Configure global default authentication strategy
+  app
+    .configure(AuthenticationBindings.COMPONENT)
+    .to({defaultMetadata: { strategy: 'uaa' }});
+
+  // Bind UAA auth strategy
+  app
+    .bind('authentication.strategies.uaaAuthStrategy')
+    .to(uaaAuthStrategy)
+    .tag({
+      [CoreTags.EXTENSION_FOR]:
+        AuthenticationBindings.AUTHENTICATION_STRATEGY_EXTENSION_POINT_NAME,
+    });
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);

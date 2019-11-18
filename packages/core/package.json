@@ -73,7 +73,7 @@
     "@typescript-eslint/eslint-plugin": "2.7.0",
     "@loopback/eslint-config": "4.1.4",
     "eslint": "6.6.0",
-    "eslint-config-prettier": "6.5.0",
+    "eslint-config-prettier": "6.6.0",
     "eslint-plugin-eslint-plugin": "2.1.0",
     "eslint-plugin-mocha": "6.2.1",
     "typescript": "~3.7.2"

@@ -9,6 +9,15 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+strategy:
+  matrix:
+    Node8:
+      NODEJS_VERSION: '8.x'
+    Node9:
+      NODEJS_VERSION: '9.x'
+    Node10:
+      NODEJS_VERSION: '10.x'
+
 steps:
 - task: NodeTool@0
   inputs:

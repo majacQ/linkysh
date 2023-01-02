@@ -32,6 +32,9 @@
     "zone.js": "0.11.5"
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-44080a011e9f0d3d4f5e99875d6bfe1f
+    "@angular-devkit/build-angular": "15.0.0",
+  =======
   <<<<<<< snyk-fix-2fc073bf81b5c1b46666e38e53d4418e
     "@angular-devkit/build-angular": "13.0.0",
   =======
@@ -53,6 +56,7 @@
   >>>>>>> master
   >>>>>>> master
   >>>>>>> master
+  >>>>>>> master
     "@angular/cli": "8.3.20",
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
@@ -66,7 +70,11 @@
     "codelyzer": "5.2.0",
     "jasmine-core": "3.99.1",
     "jasmine-spec-reporter": "4.2.1",
+  <<<<<<< snyk-fix-44080a011e9f0d3d4f5e99875d6bfe1f
+    "karma": "5.0.8",
+  =======
     "karma": "6.0.0",
+  >>>>>>> master
     "karma-chrome-launcher": "3.1.0",
     "karma-coverage-istanbul-reporter": "2.1.1",
     "karma-jasmine": "2.0.1",

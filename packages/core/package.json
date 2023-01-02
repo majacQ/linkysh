@@ -51,27 +51,51 @@
   ],
   "dependencies": {
     "@loopback/authentication": "^3.2.1",
-    "@loopback/authentication-passport": "^1.0.3",
+    "@loopback/authentication-passport": "^3.0.0",
     "@loopback/boot": "^1.5.9",
-    "@loopback/cli": "^1.25.1",
+    "@loopback/cli": "^2.2.1",
     "@loopback/context": "^1.23.3",
     "@loopback/core": "^1.10.5",
     "@loopback/openapi-v3": "^1.9.10",
     "@loopback/repository": "^1.15.2",
+  <<<<<<< snyk-fix-81328d0e29a888e85eb5874b46ac8dea
+    "@loopback/rest": "^9.0.0",
+    "@loopback/rest-explorer": "^3.0.0",
+  =======
     "@loopback/rest": "^1.21.0",
-    "@loopback/rest-explorer": "^1.4.2",
+    "@loopback/rest-explorer": "^1.4.5",
+  >>>>>>> master
     "@loopback/service-proxy": "^1.3.9",
     "loopback-connector-postgresql": "^3.8.0",
+  <<<<<<< snyk-upgrade-af05daf42f97f17b811b06d58dc3d462
     "nconf": "^0.10.0",
+    "openid-client": "^3.15.10"
+  =======
+    "nconf": "^0.11.0",
     "openid-client": "^3.7.4"
+  >>>>>>> master
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-d4d4f2b6a54fd305fe8133f65b62e771
     "@loopback/build": "9.0.0",
+  =======
+    "@loopback/build": "9.0.6",
+  >>>>>>> master
     "source-map-support": "0.5.16",
     "@loopback/testlab": "1.10.0",
-    "@types/node": "10.17.5",
+  <<<<<<< snyk-upgrade-155743040feefc82cb61b4e57ecc6d40
+    "@types/node": "10.17.60",
     "@typescript-eslint/parser": "2.12.0",
+  =======
+    "@types/node": "10.17.5",
+  <<<<<<< snyk-upgrade-52dfb71230c0f9ff331beef3bc1831a3
+    "@typescript-eslint/parser": "2.34.0",
+  >>>>>>> master
     "@typescript-eslint/eslint-plugin": "2.12.0",
+  =======
+    "@typescript-eslint/parser": "2.12.0",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+  >>>>>>> master
     "@loopback/eslint-config": "5.0.0",
     "eslint": "6.7.2",
     "eslint-config-prettier": "6.7.0",

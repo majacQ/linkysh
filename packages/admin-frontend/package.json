@@ -32,6 +32,9 @@
     "zone.js": "0.11.5"
   },
   "devDependencies": {
+  <<<<<<< dependabot/npm_and_yarn/packages/admin-frontend/terser-and-angular-devkit/build-angular-5.14.2
+    "@angular-devkit/build-angular": "13.3.10",
+  =======
   <<<<<<< snyk-upgrade-e95dcd66fd4e845187de1b4e16b30cff
     "@angular-devkit/build-angular": "0.1102.19",
   =======
@@ -39,6 +42,7 @@
     "@angular-devkit/build-angular": "0.1100.0",
   =======
     "@angular-devkit/build-angular": "13.3.10",
+  >>>>>>> master
   >>>>>>> master
   >>>>>>> master
     "@angular/cli": "8.3.20",

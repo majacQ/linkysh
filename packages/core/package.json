@@ -76,7 +76,11 @@
   >>>>>>> master
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-d4d4f2b6a54fd305fe8133f65b62e771
+    "@loopback/build": "9.0.0",
+  =======
     "@loopback/build": "9.0.6",
+  >>>>>>> master
     "source-map-support": "0.5.16",
     "@loopback/testlab": "1.10.0",
   <<<<<<< snyk-upgrade-155743040feefc82cb61b4e57ecc6d40

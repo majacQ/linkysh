@@ -32,6 +32,9 @@
     "zone.js": "0.11.5"
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-65bea2ac728ad5ce64feeaa8f805666f
+    "@angular-devkit/build-angular": "13.3.2",
+  =======
   <<<<<<< dependabot/npm_and_yarn/packages/admin-frontend/terser-and-angular-devkit/build-angular-5.14.2
     "@angular-devkit/build-angular": "13.3.10",
   =======
@@ -42,6 +45,7 @@
     "@angular-devkit/build-angular": "0.1100.0",
   =======
     "@angular-devkit/build-angular": "13.3.10",
+  >>>>>>> master
   >>>>>>> master
   >>>>>>> master
   >>>>>>> master

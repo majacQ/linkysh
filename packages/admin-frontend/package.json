@@ -32,12 +32,24 @@
     "zone.js": "0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "12.0.0",
+  <<<<<<< snyk-upgrade-e95dcd66fd4e845187de1b4e16b30cff
+    "@angular-devkit/build-angular": "0.1102.19",
+  =======
+  <<<<<<< snyk-fix-1ebe5b860e7601e9f160d46884f2f367
+    "@angular-devkit/build-angular": "0.1100.0",
+  =======
+    "@angular-devkit/build-angular": "13.3.10",
+  >>>>>>> master
+  >>>>>>> master
     "@angular/cli": "8.3.20",
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
     "@types/node": "8.10.59",
-    "@types/jasmine": "3.5.0",
+  <<<<<<< snyk-upgrade-0b3f4e110901377a4f45fdb862465917
+    "@types/jasmine": "3.10.4",
+  =======
+    "@types/jasmine": "3.10.7",
+  >>>>>>> master
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.0",
     "jasmine-core": "3.99.1",

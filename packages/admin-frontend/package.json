@@ -32,12 +32,16 @@
     "zone.js": "0.10.2"
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-1ebe5b860e7601e9f160d46884f2f367
     "@angular-devkit/build-angular": "0.1100.0",
+  =======
+    "@angular-devkit/build-angular": "13.3.10",
+  >>>>>>> master
     "@angular/cli": "8.3.20",
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
     "@types/node": "8.10.59",
-    "@types/jasmine": "3.5.0",
+    "@types/jasmine": "3.10.7",
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.0",
     "jasmine-core": "3.5.0",

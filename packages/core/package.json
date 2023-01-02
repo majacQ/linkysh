@@ -53,7 +53,11 @@
     "@loopback/authentication": "^3.2.1",
     "@loopback/authentication-passport": "^3.0.0",
     "@loopback/boot": "^1.5.9",
+  <<<<<<< snyk-fix-e1c19faad835c30351a2d6f546ceac93
+    "@loopback/cli": "^4.1.2",
+  =======
     "@loopback/cli": "^2.2.1",
+  >>>>>>> master
     "@loopback/context": "^1.23.3",
     "@loopback/core": "^1.10.5",
     "@loopback/openapi-v3": "^1.9.10",
@@ -76,10 +80,14 @@
   >>>>>>> master
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-e1c19faad835c30351a2d6f546ceac93
+    "@loopback/build": "6.4.1",
+  =======
   <<<<<<< snyk-fix-d4d4f2b6a54fd305fe8133f65b62e771
     "@loopback/build": "9.0.0",
   =======
     "@loopback/build": "9.0.6",
+  >>>>>>> master
   >>>>>>> master
     "source-map-support": "0.5.16",
     "@loopback/testlab": "1.10.0",

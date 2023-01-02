@@ -29,7 +29,11 @@
     "@angular/router": "8.2.14",
     "rxjs": "6.5.3",
     "tslib": "1.10.0",
+  <<<<<<< snyk-upgrade-f91d70dca317303fe231236b573cd1c1
+    "zone.js": "0.12.0"
+  =======
     "zone.js": "0.11.5"
+  >>>>>>> master
   },
   "devDependencies": {
   <<<<<<< snyk-fix-70cccbc669a812101dc877e4e4e767c0

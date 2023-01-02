@@ -41,7 +41,11 @@
     "@angular/compiler-cli": "8.2.14",
     "@angular/language-service": "8.2.14",
     "@types/node": "8.10.59",
+  <<<<<<< snyk-upgrade-0b3f4e110901377a4f45fdb862465917
+    "@types/jasmine": "3.10.4",
+  =======
     "@types/jasmine": "3.10.7",
+  >>>>>>> master
     "@types/jasminewd2": "2.0.8",
     "codelyzer": "5.2.0",
     "jasmine-core": "3.5.0",

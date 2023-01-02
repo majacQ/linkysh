@@ -32,6 +32,9 @@
     "zone.js": "0.11.5"
   },
   "devDependencies": {
+  <<<<<<< snyk-fix-2fc073bf81b5c1b46666e38e53d4418e
+    "@angular-devkit/build-angular": "13.0.0",
+  =======
   <<<<<<< snyk-fix-65bea2ac728ad5ce64feeaa8f805666f
     "@angular-devkit/build-angular": "13.3.2",
   =======
@@ -45,6 +48,7 @@
     "@angular-devkit/build-angular": "0.1100.0",
   =======
     "@angular-devkit/build-angular": "13.3.10",
+  >>>>>>> master
   >>>>>>> master
   >>>>>>> master
   >>>>>>> master

@@ -69,9 +69,14 @@
     "@loopback/build": "9.0.6",
     "source-map-support": "0.5.16",
     "@loopback/testlab": "1.10.0",
+  <<<<<<< snyk-upgrade-155743040feefc82cb61b4e57ecc6d40
+    "@types/node": "10.17.60",
+    "@typescript-eslint/parser": "2.12.0",
+  =======
     "@types/node": "10.17.5",
   <<<<<<< snyk-upgrade-52dfb71230c0f9ff331beef3bc1831a3
     "@typescript-eslint/parser": "2.34.0",
+  >>>>>>> master
     "@typescript-eslint/eslint-plugin": "2.12.0",
   =======
     "@typescript-eslint/parser": "2.12.0",

@@ -32,10 +32,14 @@
     "zone.js": "0.10.2"
   },
   "devDependencies": {
+  <<<<<<< snyk-upgrade-e95dcd66fd4e845187de1b4e16b30cff
+    "@angular-devkit/build-angular": "0.1102.19",
+  =======
   <<<<<<< snyk-fix-1ebe5b860e7601e9f160d46884f2f367
     "@angular-devkit/build-angular": "0.1100.0",
   =======
     "@angular-devkit/build-angular": "13.3.10",
+  >>>>>>> master
   >>>>>>> master
     "@angular/cli": "8.3.20",
     "@angular/compiler-cli": "8.2.14",
